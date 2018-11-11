@@ -1,0 +1,11 @@
+{
+    "customer": [
+      { "Account Number": 1110000001, "First Name": "Grace", "Last Name": "Frank", "Email":"frankgracey@gmail.com", "Password":"y7n8h", "Phone":"08137038977" },
+      { "Account Number": 1110000002, "First Name": "Victoria", "Last Name": "Frank", "Email":"frankvictoria@gmail.com", "Password":"y7n8h", "Phone":"08137038966" }
+    ],
+
+    "transactions": [
+      { "Transaction ID": 10001, "Description": "Deposit", "Account Number":"1110000001", "Account Balance":"5000" }
+    ],
+    "profile": { "name": "typicode" }
+  }
