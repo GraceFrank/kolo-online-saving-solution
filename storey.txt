@@ -1,0 +1,15 @@
+Online savings solution eg (Piggy Bank)
+
+You recently got employed by a financial institution, and they are running a campaign to help people save. 
+You are required to build a minimum viable product(MVP) that carries out the following operations.
+
+Create a piggy bank
+
+Deposit money
+
+Withdraw money
+
+View all transaction.
+
+Update account.
+
