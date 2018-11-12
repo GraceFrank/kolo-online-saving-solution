@@ -1,11 +1,53 @@
 {
-    "customer": [
-      { "Account Number": 1110000001, "First Name": "Grace", "Last Name": "Frank", "Email":"frankgracey@gmail.com", "Password":"y7n8h", "Phone":"08137038977" },
-      { "Account Number": 1110000002, "First Name": "Victoria", "Last Name": "Frank", "Email":"frankvictoria@gmail.com", "Password":"y7n8h", "Phone":"08137038966" }
-    ],
-
-    "transactions": [
-      { "Transaction ID": 10001, "Description": "Deposit", "Account Number":"1110000001", "Account Balance":"5000" }
-    ],
-    "profile": { "name": "typicode" }
+  "customer": [
+    {
+      "id": 1,
+      "Account Number": 1110000001,
+      "First Name": "Grace",
+      "Last Name": "Frank",
+      "Email": "frankgracey@gmail.com",
+      "Password": "decagonlab",
+      "Phone": "08137038977",
+      "Account Balance": 0
+    },
+    {
+      "id": 2,
+      "Account Number": 1110000002,
+      "First Name": "Victoria",
+      "Last Name": "Frank",
+      "Email": "frankvictoria@gmail.com",
+      "Password": "decagonlab",
+      "Phone": "08137038966",
+      "Account Balance": 0
+    },
+    {
+      "Account Number": "29486192339",
+      "First Name": "Andrew",
+      "Last Name": "Layefa",
+      "Email": "fayefa@gmail.com",
+      "Password": "",
+      "Phone": "988999",
+      "Account Balance": "0",
+      "id": 3
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "Description": "Deposit",
+      "Account Number": "1110000001",
+      "Amount": "5000",
+      "Account Balance": "5000"
+    },
+    {
+      "id": 2,
+      "Description": "Withdrawal",
+      "Account Number": "1110000001",
+      "Amount": "2000",
+      "Account Balance": "3000"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}

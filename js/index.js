@@ -1,38 +1,48 @@
+
 $(document).ready(function(){
     
 
-
-    /*alert("welcome");
-
+    sessionStorage.clear();
+    
     $('#createAccount').on('click', function(){
-
+               
         var newCustomer = { "Account Number": Math.floor((Math.random() * 90000000000) + 1000000000),
         "First Name": $('#firstName').val(),
         "Last Name": $('#lastName').val(), 
-        "Email":$('#email').val(), 
-        "Password":$('#password').val(), 
-        "Phone":$('#telPhone').val()};
+        "Email":$('#userEmail').val(), 
+        "Password":$('#userPassword').val(), 
+        "Phone":$('#telPhone').val(), "Account Balance":0};
+        //sessionStorage.setItem("customerDetails", JSON.stringify(newCustomer));
+
+       
+           // alert(sessionStorage.getItem("customerDetails"));
+
+
 
         $.ajax({
-            type:'GET',
-            url:'db.json',
+            type:'POST',
+            url:' http://localhost:3000/customer',
             data:newCustomer,   
             dataType: "json",
+            success:function(data){
+                console.log("sucess")
+                sessionStorage.setItem("customerDetails", JSON.stringify(newCustomer));
+                document.location.href = "dashboard.html";
 
-
-            sucess:function(){
-                alert(data);
 
                 },
             error:function(){
-                alert("error saving details");
+                console.log("error saving details");
             }
             });
-        
+
         
 
+            
+    
+        
     })
-    */
+    
 
    
    })

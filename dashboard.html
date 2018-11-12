@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    <!-- Google CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <title>Dash Board!</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
+        <a class="navbar-brand" href="#" style="font-family: 'Merienda One', cursive; font-size: 25px"> <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">KOLO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">My Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="transactions.html">Transactions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="update-account.html">Account Details</a>
+              
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline">
+            
+            <button type="button" class="btn btn-outline-light"><a href ="Index.html">Log Out</a></button>
+          </form>
+      </nav>
+    
+      <div class="jumbotron" style=" width:80%; margin-left:10%; margin-top
+      : 15px; margin-bottom:20px; background-color: #b3f0ff" >
+            <h3 class="display-4">WELCOME <span id = "nameofUser">GRACE</span></h3>
+            <p class="lead">Piggybank.ng allows you to better manage your finances by helping you grow your savings and investment securely with ease, flexibility and discipline.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+            <div>
+                    <div style="margin-bottom:20px">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Account Balance</h5>
+                          <p class="card-text">  <h2 >&#8358 <span id="userAccBal" >0.00</span></h2></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div >
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Deposit/Withdraw Money</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          <form>
+                                <fieldset >
+                                  <div class="form-group">
+                                    <label for="disabledTextInput"> Amount</label>
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder=" amount">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="disabledSelect">Type of Transaction</label>
+                                    <select id="disabledSelect" class="form-control">
+                                      <option value="deposit"> Deposit</option>
+                                      <option value="withdraw"> Withdrwal</option>
+                                    </select>
+                                  </div>
+                                 
+                                  <button type="button" class="btn btn-primary">Make Transaction</button>
+                                </fieldset>
+                              </form>
+
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+
+      <!-- footer -->
+      <div class="card">
+        <div class="card-header" style="background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
+          Quick links
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
