@@ -5,13 +5,14 @@ $(document).ready(function(){
     console.log(userDetails);
     let dateT = new Date();
 
-    function  UserBalanceUpdate(accountNumber, firstName, lastName, phone, password, accountBalance){
+    function  UserBalanceUpdate(accountNumber, firstName, lastName, phone, password, email, accountBalance){
         this.AccountNumber = accountNumber,
         this.FirstName = firstName;
         this.LastName = lastName;
         this.Phone = phone;
         this.Password = password,
-        this.AccountBalance = accountBalance;
+        this.Email = email;
+        this.AccountBalance = accountBalance
        };
 
   //post transaction
@@ -25,15 +26,17 @@ $(document).ready(function(){
     };
     //update user customer balance
     function updateUserBal(newBal){
+
         $.ajax({
             type:'PUT',
             url:' http://localhost:3000/customer/'+ userDetails.id,
-            data: new UserBalanceUpdate(userdetails.AccountNumber, userDetails.firstName, userDetails.lastName, userDetails.phone, userDetails.password, newBal),   
+            data: new UserBalanceUpdate(userDetails.AccountNumber, userDetails.FirstName, userDetails.LastName, userDetails.Phone, userDetails.Password, userDetails.Email, newBal),   
             dataType: "json",
             success:function(data){
+                console.log(userDetails);
                     sessionStorage.clear();
                     sessionStorage.setItem("customerDetails", JSON.stringify(data));
-                    alert("Changes Saved Sucessfully");
+                   // alert("Changes Saved Sucessfully");
                     document.location.reload();
             },
             

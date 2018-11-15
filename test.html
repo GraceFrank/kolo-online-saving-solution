@@ -1,13 +1,87 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <title>Testing Page</title>
-    </head>
-    <body>
-        This page is for testing JSON
-        <p><button id="testStuff">Start Saving</button></p>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          
+      <!-- Google CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+      <title>KOLO online Saving Solution</title>
+  </head>
+
+<body>
+  <a href="#signupModal" data-toggle="modal" class=""><i class="icon-user"></i>Sign Up<i class="icon-sort-down"></i></a>
 
 
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/test.js"></script>
-    </body>
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                   <h3 class="modal-title text-center" id="myModalLabel">Make Payments</h3>
+  
+              </div>
+              <div class="modal-body">
+                  <div class="row text-center">
+                      <form class="col-md-10 col-md-offset-1" style="padding:0">
+                          <div class="form-group col-md-12">
+                              <input type="text" class="form-control" id="signupEmail1" placeholder="Card Number" contenteditable="false">
+                          </div>
+                        <p>Expiration</p>
+                          <div class="form-group col-md-6">                            
+                              <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
+                          </div>
+                          <div class="form-group col-md-6">                            
+                              <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input type="text" class="form-control" id="access-code" placeholder="Premier Access Code">
+                          </div>
+                        <div class="clearfix"></div>
+                      </form>
+                  </div>
+                  <div class="row text-center">
+                    <hr>
+                      <button type="button" class="btn btn-primary col-md-8 col-md-offset-2">Make Payment</button>
+                      <br class="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- form -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+         <!-- MDB core JavaScript -->
+
+        <script src="js/index.js"></script>   
+  </body>
 </html>

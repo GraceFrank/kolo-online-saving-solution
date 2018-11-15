@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    <!-- Google CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <title>Account Details</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
+        <a class="navbar-brand" href="#" style="font-family: 'Merienda One', cursive; font-size: 25px"> <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">KOLO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transactions.html">Transactions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="update-account.html">Account Details</a>
+              
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline">
+            
+            <button type="button" class="btn btn-outline-light" ><a href ="Index.html">Log Out</a></button>
+          </form>
+      </nav>
+
+      <div id="viewAccDetails" class="card" style=" width: 80%; margin-left: 10%; margin-top:20px; margin-bottom: 100px; background-color:#A9EDED" >
+          <div class="card" style="width: 90%; margin-left: 5%; margin-top:20px; margin-bottom: 100px" >
+            <div class="card-body">
+              <h4 class="card-title">Account  Details</h4>
+                <p class="card-text">You can view and update your account details here.</p>
+                <ul id ="listTransaction" class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Account Details</b></li>
+                      
+                      </ul>
+                      <p></p>
+                    <p><button type="button" id="updateAcc" class="btn btn-info">Update Account  </button></p>
+              
+              
+            </div>
+          </div>
+      </div>
+
+      <div id="updateAccDetails" class="card" style="width: 80%; margin-left: 10%; margin-top:20px; margin-bottom: 100px; background-color:#A9EDED" >
+        <div class="card" style="width: 90%; margin-left: 5%; margin-top:20px; margin-bottom: 100px" >
+          <div class="card-body">
+            <h4 class="card-title">Update  Details</h4>
+              <p class="card-text">You can Edit and update your account details here.</p>
+              <ul id ="listTransaction" class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Account Details</b></li>
+                      <li class="list-group-item" id="accNum"></li> <!--account number-->
+                      <li class="list-group-item" id="emailUpdate"></li><!--email-->
+                      <li class="list-group-item"> <!-- first Name -->
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-2 col-form-label">First Name</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="FirstName" >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item"> <!--last Name-->
+                          <div class="form-group row">
+                              <label for="inputPassword" class="col-sm-2 col-form-label">Last Name</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="LastName" >
+                              </div>
+                            </div>
+                      </li>
+                      <li class="list-group-item"> <!--phone -->
+                          <div class="form-group row">
+                              <label for="inputPassword" class="col-sm-2 col-form-label">Phone</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="phoneNum" >
+                              </div>
+                            </div>
+                      </li>
+                      <li class="list-group-item"> <!--password-->
+                          <div class="form-group row">
+                              <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="passwordUpdate" >
+                              </div>
+                            </div>
+                      </li>
+                      
+                    </ul>
+                    <p></p>
+                  <p><button type="button" id="SaveChanges" class="btn btn-info">Save Changes</button></p>
+            
+            
+          </div>
+        </div>
+    </div>
+
+      
+
+
+      <!-- footer -->
+      <div class="card">
+        <div class="card-header" style="background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
+        <img src="images/logo.png" width="30px"  height="30px">Quick links
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Copyright &copy 2008 Kolo` Inc. All rights reserved..</p>
+            <footer class="blockquote-footer"><img src="images/facebook-logo-png-9.png" width="30px"  height="30px">follow us on social media <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/accountdetails.js"></script>
+  </body>
+</html>

@@ -1,11 +1,220 @@
 {
-    "customer": [
-      { "Account Number": 1110000001, "First Name": "Grace", "Last Name": "Frank", "Email":"frankgracey@gmail.com", "Password":"y7n8h", "Phone":"08137038977" },
-      { "Account Number": 1110000002, "First Name": "Victoria", "Last Name": "Frank", "Email":"frankvictoria@gmail.com", "Password":"y7n8h", "Phone":"08137038966" }
-    ],
-
-    "transactions": [
-      { "Transaction ID": 10001, "Description": "Deposit", "Account Number":"1110000001", "Account Balance":"5000" }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "customer": [
+    {
+      "AccountNumber": "29486192339",
+      "FirstName": "Ondufa",
+      "LastName": "Moses",
+      "Email": "ondufaMoses@gmail.com",
+      "Password": "78979",
+      "Phone": "08038778865",
+      "AccountBalance": "0",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "AccountNumber": "26828952919",
+      "Email": "node@js.com",
+      "AccountBalance": "12000",
+      "FirstName": "Django",
+      "LastName": "Swift",
+      "Phone": "90987654321",
+      "Password": "html5css3"
+    },
+    {
+      "AccountNumber": "30311369195",
+      "FirstName": "david ",
+      "LastName": "mogbeyi",
+      "Phone": "112112112112",
+      "Password": "kkkkkk",
+      "Email": "mogbeyidavid@gmail.com",
+      "AccountBalance": "-677",
+      "id": 3
+    },
+    {
+      "AccountNumber": "9839082512",
+      "FirstName": "Squad",
+      "LastName": "play",
+      "Email": "swift@js.com",
+      "Password": "jjgjgj",
+      "Phone": "09098877090",
+      "AccountBalance": "0",
+      "id": 4
+    },
+    {
+      "AccountNumber": "64120320903",
+      "FirstName": "kfkfj",
+      "LastName": "vvnv",
+      "Email": "jjfj",
+      "Password": "jfjfj09065765432",
+      "Phone": "",
+      "AccountBalance": "0",
+      "id": 5
+    },
+    {
+      "AccountNumber": "28305953453",
+      "FirstName": "kfkfjfjfjfjf",
+      "LastName": "jgjgjg",
+      "Email": "mggkg",
+      "Password": "jfjjg",
+      "Phone": "0976766",
+      "AccountBalance": "0",
+      "id": 6
+    },
+    {
+      "AccountNumber": "70670692152",
+      "FirstName": "jgjgjg",
+      "LastName": "mfffkf",
+      "Email": "ffff",
+      "Password": "kgkgkgkg",
+      "Phone": "000",
+      "AccountBalance": "0",
+      "id": 7
+    },
+    {
+      "AccountNumber": "38075836697",
+      "FirstName": "Elizabeth",
+      "LastName": "Emmanuel",
+      "Phone": "09067565478",
+      "Password": "123456",
+      "Email": "yakubu@gmail.com",
+      "AccountBalance": "10001500",
+      "id": 8
+    },
+    {
+      "AccountNumber": "13909705004",
+      "FirstName": "Josh",
+      "LastName": "Bush",
+      "Email": "bush@yahoo.com",
+      "Password": "123456",
+      "Phone": "09088876543",
+      "AccountBalance": "0",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "AccountNumber": "71532744812",
+      "Email": "frankgracey@gmail.com",
+      "AccountBalance": "50050",
+      "FirstName": "Alhaji dauda",
+      "LastName": "Frank",
+      "Phone": "08137038977",
+      "Password": "1214321432"
+    },
+    {
+      "id": 11,
+      "AccountNumber": "76534340190",
+      "Email": "josh@gmail.com",
+      "AccountBalance": "1000000500",
+      "FirstName": "Prof Josh",
+      "LastName": "Bush",
+      "Phone": "09034343898",
+      "Password": "123456"
+    }
+  ],
+  "transactions": [
+    {
+      "Description": "withdraw",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "1000",
+      "Date": "Wed Nov 14 2018 16:14:36 GMT+0100 (West Africa Standard Time)",
+      "id": 52
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "2000",
+      "Date": "Wed Nov 14 2018 17:02:09 GMT+0100 (West Africa Standard Time)",
+      "id": 53
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "10000",
+      "AccountBalance": "12000",
+      "Date": "Wed Nov 14 2018 17:12:18 GMT+0100 (West Africa Standard Time)",
+      "id": 54
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "30311369195",
+      "Amount": "200",
+      "AccountBalance": "200",
+      "Date": "Wed Nov 14 2018 17:26:38 GMT+0100 (West Africa Standard Time)",
+      "id": 55
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "30311369195",
+      "Amount": "123",
+      "AccountBalance": "323",
+      "Date": "Wed Nov 14 2018 17:29:59 GMT+0100 (West Africa Standard Time)",
+      "id": 56
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "30311369195",
+      "Amount": "-1000",
+      "AccountBalance": "-677",
+      "Date": "Wed Nov 14 2018 17:30:12 GMT+0100 (West Africa Standard Time)",
+      "id": 57
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "38075836697",
+      "Amount": "500",
+      "AccountBalance": "500",
+      "Date": "Thu Nov 15 2018 05:54:54 GMT+0100 (West Africa Standard Time)",
+      "id": 58
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "38075836697",
+      "Amount": "10000000",
+      "AccountBalance": "10000500",
+      "Date": "Thu Nov 15 2018 05:55:28 GMT+0100 (West Africa Standard Time)",
+      "id": 59
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "38075836697",
+      "Amount": "1000",
+      "AccountBalance": "10001500",
+      "Date": "Thu Nov 15 2018 05:57:07 GMT+0100 (West Africa Standard Time)",
+      "id": 60
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "71532744812",
+      "Amount": "50",
+      "AccountBalance": "50",
+      "Date": "Thu Nov 15 2018 14:19:46 GMT+0100 (West Africa Standard Time)",
+      "id": 61
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "71532744812",
+      "Amount": "50000",
+      "AccountBalance": "50050",
+      "Date": "Thu Nov 15 2018 14:20:50 GMT+0100 (West Africa Standard Time)",
+      "id": 62
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "76534340190",
+      "Amount": "500",
+      "AccountBalance": "500",
+      "Date": "Thu Nov 15 2018 14:28:24 GMT+0100 (West Africa Standard Time)",
+      "id": 63
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "76534340190",
+      "Amount": "1000000000",
+      "AccountBalance": "1000000500",
+      "Date": "Thu Nov 15 2018 14:28:58 GMT+0100 (West Africa Standard Time)",
+      "id": 64
+    }
+  ]
+}

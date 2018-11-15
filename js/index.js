@@ -1,38 +1,48 @@
+
 $(document).ready(function(){
     
 
-
-    /*alert("welcome");
-
+    sessionStorage.clear();
+    
     $('#createAccount').on('click', function(){
+               
+        var newCustomer = { "AccountNumber": Math.floor((Math.random() * 90000000000) + 1000000000),
+        "FirstName": $('#firstName').val(),
+        "LastName": $('#lastName').val(), 
+        "Email":$('#userEmail').val(), 
+        "Password":$('#userPassword').val(), 
+        "Phone":$('#telPhone').val(), "AccountBalance":0};
+        //sessionStorage.setItem("customerDetails", JSON.stringify(newCustomer));
 
-        var newCustomer = { "Account Number": Math.floor((Math.random() * 90000000000) + 1000000000),
-        "First Name": $('#firstName').val(),
-        "Last Name": $('#lastName').val(), 
-        "Email":$('#email').val(), 
-        "Password":$('#password').val(), 
-        "Phone":$('#telPhone').val()};
+       
+           // alert(sessionStorage.getItem("customerDetails"));
+
+
 
         $.ajax({
-            type:'GET',
-            url:'db.json',
+            type:'POST',
+            url:' http://localhost:3000/customer',
             data:newCustomer,   
             dataType: "json",
+            success:function(data){
+                alert("Congratulations!", "Your Peerless Savings have been created");                
+                sessionStorage.setItem("customerDetails", JSON.stringify(newCustomer));
+                document.location.href = "dashboard.html";
 
-
-            sucess:function(){
-                alert(data);
 
                 },
             error:function(){
-                alert("error saving details");
+                console.log("error saving details");
             }
             });
-        
+
         
 
+            
+    
+        
     })
-    */
+    
 
    
    })
