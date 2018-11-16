@@ -15,7 +15,7 @@ $(document).ready(function(){
                         .append('<ul class="list-group-item"><li class="list-group-item"><b>Date  </b>'+ (data[i].Date)+ '</li>'+
                         '<li class="list-group-item"><b>Account Number: </b>'+ (data[i].AccountNumber)+ '</li>' +
                         '<li class="list-group-item"><b>Description: </b>'+ (data[i].Description)+ '</li>' +
-                          '<li class="list-group-item"><b>Amount: </b>'+ (data[i].Amount)+ '</li>' +
+                          '<li class="list-group-item"><b>Amount: </b>&#x20a6 '+ (data[i].Amount)+ '</li>' +
                           '<li class="list-group-item"><b>New Account Balance: </b>'+ (data[i].AccountBalance)+ '</li></ul><hr style="background-color:red">')
 
                 }//if statement

@@ -10,45 +10,88 @@
         
     <!-- Google CSS -->
     <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+     <!-- My own button -->
+     <link href="css/mybutton.css" rel="stylesheet">
     <title>Dash Board!</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
-        <a class="navbar-brand" href="#" style="font-family: 'Merienda One', cursive; font-size: 25px"> <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">KOLO</a>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#0469ba">
+        <a class="navbar-brand" href="#" style="font-family: 'Merienda One', cursive; font-size: 25px" style="color:#ffff"> <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""><span style="color:white">KOLO</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="Index.html" style="color:#ffff"><b>Home</b> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">My Dashboard</a>
+              <a class="nav-link disabled" href="#" style="color:#ffff; text-decoration:underline"><b>My Dashboard</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="transactions.html">Transactions</a>
+              <a class="nav-link " href="transactions.html" style="color:#ffff"><b>Transactions</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="update-account.html">Account Details</a>
+              <a class="nav-link" href="update-account.html" style="color:#ffff"><b>Account Details</b></a>
               
             </li>
           </ul>
         </div>
         <form class="form-inline">
             
-            <button type="button" class="btn btn-outline-light"><a href ="Index.html">Log Out</a></button>
+            <button type="button" class="btn btn-outline-light"><a href ="Index.html" style="color: white">Log Out</a></button>
           </form>
       </nav>
     
+
+      <!--Modal-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                  <div class="modal-header">
+                       <h3 class="modal-title text-center" style="color:#0469ba" id="myModalLabel">Make Payments</h3>
+      
+                  </div>
+                  <div class="modal-body">
+                      <div class="row text-center">
+                          <form class="col-md-10 col-md-offset-1" style="padding:0">
+                              <div class="form-group col-md-12">
+                                  <p style="text-align:justify"><b> Card Number</b></p>
+                                  <input type="number" class="form-control" id="cardNumber" placeholder="Card Number" contenteditable="false">
+                              </div>
+                              <div class="form-row" style="padding: 15px"><b> Expiration</b> </div> 
+                              <div class="form-row" style="margin-left:10px">  
+                                                             
+                                Month<input type="text" class="form-control" id="month" placeholder="Month" contenteditable="false"> 
+                              </div>
+                              <div class="form-row" style="margin-left:10px; margin-top: 15px; margin-bottom: 20px">                                                 
+                                Year<input type="number" class="form-control" id="year" placeholder="Year" contenteditable="false"> 
+                              </div>
+                              
+                            <div class="clearfix"></div>
+                          </form>
+                      </div>
+                      <div class="row text-center"  style="margin-right: 50px; margin-bottom: 10px">
+                        <hr>
+                          <button type="button"  id ="makeTransaction" class="mybutton" class="close" data-dismiss="modal" aria-hidden="true">Make Payment</button>
+                          <br class="">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <p><img src="images/cards.png"></p>
+                       </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
       <div class="jumbotron" style=" width:80%; margin-left:10%; margin-top
       : 15px; margin-bottom:20px; background-color: #A9EDED" >
             <h1 class="display-6">Hi <span id = "nameofUser">There</span></h1>
             <p class="lead">Kolo allows you to better manage your finances by helping you grow your savings and investment securely with ease, flexibility and discipline.</p>
             <hr class="my-4">
-            <p>You can saving from as little as 500.</p>
+            <p>You can saving from as little as 50 Naira.</p>
 
             <div>
                     <div style="margin-bottom:20px">
@@ -80,7 +123,7 @@
                                     </select>
                                   </div>
                                  
-                                  <button type="button" id="makeTransaction" class="btn btn-primary">Make Transaction</button>
+                                  <button type="button" href="#signupModal" data-toggle="modal" class="mybutton" >Make Transaction</button>
                                 </fieldset>
                               </form>
 
@@ -93,8 +136,7 @@
 
        <!-- footer -->
        <div class="card">
-        <div class="card-header" style="background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,211,209,1) 51%, rgba(1,97,184,1) 99%);">
+        <div class="card-header" style="background-color:#0469ba">
         <img src="images/logo.png" width="30px"  height="30px">Quick links
         </div>
         <div class="card-body">

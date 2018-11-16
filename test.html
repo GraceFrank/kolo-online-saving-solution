@@ -10,6 +10,10 @@
           
       <!-- Google CSS -->
       <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+
+      <!-- My own button -->
+      <link href="css/mybutton.css" rel="stylesheet">
+
       <title>KOLO online Saving Solution</title>
   </head>
 
@@ -23,34 +27,36 @@
       <div class="modal-dialog modal-sm">
           <div class="modal-content">
               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                   <h3 class="modal-title text-center" id="myModalLabel">Make Payments</h3>
+                   <h3 class="modal-title text-center" style="color:#02a8e5" id="myModalLabel">Make Payments</h3>
   
               </div>
               <div class="modal-body">
                   <div class="row text-center">
                       <form class="col-md-10 col-md-offset-1" style="padding:0">
                           <div class="form-group col-md-12">
-                              <input type="text" class="form-control" id="signupEmail1" placeholder="Card Number" contenteditable="false">
+                              <p style="text-align:justify"><b> Card Number</b></p>
+                              <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" contenteditable="false">
                           </div>
-                        <p>Expiration</p>
-                          <div class="form-group col-md-6">                            
-                              <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
+                          <div class="form-row" style="padding: 15px"><b> Expiration</b> </div> 
+                          <div class="form-row" style="margin-left:10px">  
+                                                         
+                            Month<input type="text" class="form-control" id="month" placeholder="Month" contenteditable="false"> 
                           </div>
-                          <div class="form-group col-md-6">                            
-                              <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
+                          <div class="form-row" style="margin-left:10px; margin-top: 15px; margin-bottom: 20px">                            
+                            Year<input type="text" class="form-control" id="year" placeholder="Year" contenteditable="false"> 
                           </div>
-                          <div class="form-group col-md-12">
-                              <input type="text" class="form-control" id="access-code" placeholder="Premier Access Code">
-                          </div>
+                          
                         <div class="clearfix"></div>
                       </form>
                   </div>
-                  <div class="row text-center">
+                  <div class="row text-center" style="margin-right: 50px; margin-bottom: 10px">
                     <hr>
-                      <button type="button" class="btn btn-primary col-md-8 col-md-offset-2">Make Payment</button>
+                      <button type="button"  id ="makeTransaction" class="mybutton" class="close" data-dismiss="modal" aria-hidden="true">Make Payment</button>
                       <br class="">
                   </div>
+                  <div class="form-group col-md-12">
+                      <p><img src="images/cards.png"></p>
+                     </div>
               </div>
           </div>
       </div>

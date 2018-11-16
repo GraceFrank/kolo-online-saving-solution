@@ -14,8 +14,8 @@
       "id": 2,
       "AccountNumber": "26828952919",
       "Email": "node@js.com",
-      "AccountBalance": "12000",
-      "FirstName": "Django",
+      "AccountBalance": "17000",
+      "FirstName": "Djang",
       "LastName": "Swift",
       "Phone": "90987654321",
       "Password": "html5css3"
@@ -109,6 +109,16 @@
       "LastName": "Bush",
       "Phone": "09034343898",
       "Password": "123456"
+    },
+    {
+      "AccountNumber": "23834600893",
+      "FirstName": "dauda",
+      "LastName": "dauda",
+      "Phone": "08012346786",
+      "Password": "12345678",
+      "Email": "daudag@hotmail.com",
+      "AccountBalance": "6000",
+      "id": 12
     }
   ],
   "transactions": [
@@ -215,6 +225,54 @@
       "AccountBalance": "1000000500",
       "Date": "Thu Nov 15 2018 14:28:58 GMT+0100 (West Africa Standard Time)",
       "id": 64
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "13000",
+      "Date": "Thu Nov 15 2018 17:50:03 GMT+0100 (West Africa Standard Time)",
+      "id": 65
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "14000",
+      "Date": "Thu Nov 15 2018 17:54:00 GMT+0100 (West Africa Standard Time)",
+      "id": 66
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "15000",
+      "Date": "Fri Nov 16 2018 06:16:32 GMT+0100 (West Africa Standard Time)",
+      "id": 67
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "16000",
+      "Date": "Fri Nov 16 2018 06:58:03 GMT+0100 (West Africa Standard Time)",
+      "id": 68
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "26828952919",
+      "Amount": "1000",
+      "AccountBalance": "17000",
+      "Date": "Fri Nov 16 2018 07:12:06 GMT+0100 (West Africa Standard Time)",
+      "id": 69
+    },
+    {
+      "Description": "deposit",
+      "AccountNumber": "23834600893",
+      "Amount": "6000",
+      "AccountBalance": "6000",
+      "Date": "Fri Nov 16 2018 11:00:04 GMT+0100 (West Africa Standard Time)",
+      "id": 70
     }
   ]
 }
